@@ -4,10 +4,10 @@ let unameNode=document.getElementById('uname');
 let emailNode=document.getElementById('emailid');
 let contactNode=document.getElementById('mobile');
 let errorNode1=document.getElementById('error1');
-let errorNode3=document.getElementById('error2');
-let errorNode7=document.getElementById('error3');
+let errorNode2=document.getElementById('error2');
+let errorNode3=document.getElementById('error3');
 let errorNode4=document.getElementById('error4');
-let errorNode6=document.getElementById('error5');
+let errorNode5=document.getElementById('error5');
 const errorBorder="2px solid red";
 const successBorder="2px solid green";
 function validateForm(){
