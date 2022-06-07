@@ -11,14 +11,14 @@
 }
 @font-face {
   font-family: myFont;
-  src: url(/Game\ Of\ Squids.otf);
+  src: url(Game\ Of\ Squids.otf);
 }
 #heading {
   font-family: myFont;
 }
 body {
   opacity: 0.8;
-  background-image: url("/bg1.jpg");
+  background-image: url("bg1.jpg");
   background-color: black;
   height: 500px;
   background-position: center;
