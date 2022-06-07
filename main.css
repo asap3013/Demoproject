@@ -1,0 +1,42 @@
+#nav {
+  color: black;
+  border: 2px dashed black;
+  background-color: burlywood;
+  word-spacing: 1cm;
+}
+#heading {
+  color: whitesmoke;
+  margin: 0;
+  position: absolute;
+}
+@font-face {
+  font-family: myFont;
+  src: url(/Game\ Of\ Squids.otf);
+}
+#heading {
+  font-family: myFont;
+}
+body {
+  opacity: 0.8;
+  background-image: url("/bg1.jpg");
+  background-color: black;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+#drink {
+  column-count: 4;
+  column-gap: 50px;
+  column-rule-style: solid;
+  column-rule-color: goldenrod;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15%;
+  /* height: 40%;*/
+  width: 30%;
+}

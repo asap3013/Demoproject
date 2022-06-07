@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        body {
+            opacity: 0.9;
+            /* background-image: url("/Mini_project/menu.jpg"); */
+            background-color: black;
+            /* height: 500px; */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        #drink {
+            color: antiquewhite;
+            column-count: 4;
+            column-gap: 10px;
+            column-rule-style: dotted;
+            column-rule-color: goldenrod;
+            border: 8spx solid antiquewhite;
+            margin: 1px;
+        }
+
+        #start,
+        #starterbtn,
+        #starterbtn1 {
+            color: antiquewhite;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h2 {
+            color: orange;
+        }
+        .btn , .btn5 ,.Starter1, .Starter2 {
+            margin: 10px;
+            padding: 10px;
+        }
+
+        #btn {
+            display: none;
+        }
+
+        #btn4,
+        #starterbtn,
+        #starterbtn1 {
+            display: none;
+            margin: 2px;
+            padding: 2px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".btn").click(function () {
+                $("#btn").toggle(2000);
+                console.log("Drinks")
+            });
+        });
+        $(document).ready(function () {
+            $(".btn5").click(function () {
+                $("#btn4").fadeToggle(1000);
+                console.log("Starter")
+            });
+        });
+        $(document).ready(function () {
+            $(".Starter1").click(function () {
+                $("#starterbtn").fadeToggle(1000);
+                console.log("veg Main Course")
+            });
+        });
+        $(document).ready(function () {
+            $(".Starter2").click(function () {
+                $("#starterbtn1").fadeToggle(1000);
+                console.log("Non-Veg Main Course")
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <img src="/lg.png" alt="Error" align="right">
+    <h1 style="color: yellow;" align="center"><u>Menu card</u></h1>
+    <hr>
+    <button class="btn">MENU/DRINKS</button>
+    <div id="btn">
+        <h2>Drinks:-</h2>
+        <hr>
+        <div class="row">
+            <div class="class">
+                <h2>Chai:-</h2>
+                <section id="drink">
+                    <ol type="1">
+                        <li>Assam Tea</li>
+                        <li>Ginger Tea</li>
+                        <li>Masala Tea</li>
+                        <li>Normal Tea</li>
+                        <li>Green Tea</li>
+                        <li>lemon Tea</li>
+                    </ol>
+
+                </section>
+            </div>
+            <div class="class">
+                <h2>Coffee:-</h2>
+                <section id="drink">
+                    <ol type="a">
+                        <li>Cold Coffee</li>
+                        <li>Hot Coffee</li>
+                        <li>Cold Brew</li>
+                        <li>Espresso</li>
+                        <li>Coffee Milkshake</li>
+                        <li>Irish Coffee</li>
+                    </ol>
+                </section>
+            </div>
+            <div class="class">
+                <h2>Soft Drinks:-</h2>
+                <section id="drink">
+                    <ul>
+                        <li>Pepsi</li>
+                        <li>Coco-Cola</li>
+                        <li>Sprite</li>
+                        <li>Red Bull</li>
+                        <li>Sprite</li>
+                        <li>Mountain-Dew</li>
+                    </ul>
+                </section>
+            </div>
+            <div class="class">
+                <h2>Beer:-</h2>
+                <section id="drink">
+                    <ul type="circle">
+                        <li>KingFisher</li>
+                        <li>Tuborg</li>
+                        <li>Carlsberg</li>
+                        <li>Budweiser</li>
+                        <li>Foster's</li>
+                        <li>Heineken</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+    <br>
+    <button class="btn5">MENU/STARTER</button>
+    <div id="btn4">
+        <h2>Starters</h2>
+        <section id="start">
+            <ol>
+                <li>Veg Starter
+                    <ol type="1">
+                        <li>Paneer Chilli</li>
+                        <li>Paneer Crispy</li>
+                        <li>Paneer Pakoda</li>
+                        <li>Manchurian chilli</li>
+                        <li>Manchurian Gravy</li>
+                    </ol>
+                </li>
+            </ol>
+            <ol>
+                <li>Non-Veg Starter
+                    <ol>
+                        <li>Chicken Chilly</li>
+                        <li>Chicken Crispy</li>
+                        <li>Chicken 65</li>
+                        <li>Chicken Lolly-pop</li>
+                        <li>Chicken Tikka</li>
+                    </ol>
+                </li>
+            </ol>
+    </div>
+    <br>
+    <button class="Starter1">VEG-MAIN COURSE</button>
+    <div id="starterbtn">
+        <ul>
+            <li>Veg Main Course
+                <ul type="circle">
+                    <li>Paneer Tikka Masala</li>
+                    <li>Paneer Kolhapuri</li>
+                    <li>Kadhai Paneer</li>
+                    <li>kaju Masala</li>
+                    <li>Chana Masala</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <button class="Starter2">NON-VEG MAIN COURSE</button>
+    <div id="starterbtn1">
+        <ul>
+            <li>NON-Veg Main Course
+                <ul type="circle">
+                    <li>Chicken Tikka Masala</li>
+                    <li>Mutton Masala</li>
+                    <li>Chicken Handi </li>
+                    <li>Chicken Masala</li>
+                    <li>Fish Curry</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
