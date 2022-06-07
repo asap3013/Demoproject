@@ -12,10 +12,10 @@ const errorBorder="2px solid red";
 const successBorder="2px solid green";
 function validateForm(){
     let s1=validate1();
+    let s2=validate2();
     let s3=validate3();
-    let s7=validate7();
     let s4=validate4();
-    let s6=validate6();
+    let s5=validate5();
     console.log(s1 && s2 && s3 && s4 && s5);
     return(s1 && s2 && s3 && s4 && s5 );
 } 
